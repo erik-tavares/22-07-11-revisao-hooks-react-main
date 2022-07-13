@@ -6,7 +6,8 @@ const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
 root.render(
-    
-        <App/>
-
+    <>
+        <App />
+        <a href='./temperatura'>Temperatura</a>
+    </>
 );
