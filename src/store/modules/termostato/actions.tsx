@@ -1,12 +1,12 @@
+
 interface IAumentarTemperatura {
-    type: 'aumentar'
+    type: 'aumentar',
     payload: number
 }
 
 interface IDiminuirTemperatura {
-    type: 'diminuir'
+    type: 'diminuir',
     payload: number
 }
-
 
 export type Action = IAumentarTemperatura | IDiminuirTemperatura
