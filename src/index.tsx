@@ -9,5 +9,6 @@ root.render(
     <>
         <App />
         <a href='./temperatura'>Temperatura</a>
+
     </>
 );
