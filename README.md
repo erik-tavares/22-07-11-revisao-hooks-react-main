@@ -3,5 +3,4 @@
 3. limpar o diretório src
 4. ...
 
-
 tsconfig.json = configurações do typscript no projeto

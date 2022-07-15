@@ -9,13 +9,13 @@ import { Button, styled } from '@mui/material';
 import { memo, useEffect } from 'react';
 
 type Pessoa = {
-    first_name:string;
-    last_name:string;
-    gender:string
+  first_name: string;
+  last_name: string;
+  gender: string
 }
 
 type TabelaProps = {
- pessoas: Array<Pessoa>   
+  pessoas: Array<Pessoa>
 }
 
 const StyledTableCell = styled(TableCell)`
@@ -36,12 +36,12 @@ function Tabela(props: TabelaProps) {
   //      `)
   // },[props.pessoas[0]])
 
-  useEffect(()=>{
-    if (props.pessoas.length <1) {
+  useEffect(() => {
+    if (props.pessoas.length < 1) {
       alert('nenhuma pessoa encontrada')
     }
   }, [props.pessoas])
-  
+
 
   return (
     <TableContainer component={Paper} sx={{ maxHeight: '80vh' }}>

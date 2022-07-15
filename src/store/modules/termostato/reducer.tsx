@@ -1,9 +1,9 @@
 import { Action } from "./actions";
 
-const initialState: number = 18 
+const initialState: number = 18
 
-export default function reducer(state:number = initialState, action:Action) {
-    
+export default function reducer(state: number = initialState, action: Action) {
+
     switch (action.type) {
         case "diminuir":
             return state - action.payload

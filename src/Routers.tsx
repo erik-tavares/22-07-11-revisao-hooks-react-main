@@ -10,12 +10,12 @@ export default function Routers() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path='/' element={<Home/>} />
-                <Route path='/revisao' element={<Revisao/>} />
-                <Route path='/atividade' element={<Atividade/>} />
-                <Route path='/filtro' element={<Filtro/>} />
-                <Route path='/temperatura' element={<Temperatura/>} />
-                <Route path='/pokemon' element={<Pokemon/>} />
+                <Route path='/' element={<Home />} />
+                <Route path='/revisao' element={<Revisao />} />
+                <Route path='/atividade' element={<Atividade />} />
+                <Route path='/filtro' element={<Filtro />} />
+                <Route path='/temperatura' element={<Temperatura />} />
+                <Route path='/pokemon' element={<Pokemon />} />
             </Routes>
         </BrowserRouter>
     );

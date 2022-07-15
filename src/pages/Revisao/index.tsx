@@ -5,9 +5,9 @@ export default function Revisao() {
     return (
         <>
             <h1>Revisão</h1>
-            <UseStateHook/>
+            <UseStateHook />
             <hr />
-            <UseEffectHook/>
+            <UseEffectHook />
         </>
     );
 }

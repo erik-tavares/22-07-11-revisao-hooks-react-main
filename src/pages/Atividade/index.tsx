@@ -34,32 +34,32 @@ export default function Atividade() {
             <form>
                 <div>
                     <label>Nome</label>
-                    <input type="text" 
-                           value={nome} 
-                           onChange={(event) => setNome(event.target.value)} />
+                    <input type="text"
+                        value={nome}
+                        onChange={(event) => setNome(event.target.value)} />
                 </div>
                 <div>
                     <label>Telefone</label>
                     <input type="text"
-                           value={telefone} 
-                           onChange={(event) => setTelefone(event.target.value)} />
+                        value={telefone}
+                        onChange={(event) => setTelefone(event.target.value)} />
                 </div>
                 <div>
                     <label>E-mail</label>
                     <input type="text"
-                           value={email} 
-                           onChange={(event) => setEmail(event.target.value)} />
+                        value={email}
+                        onChange={(event) => setEmail(event.target.value)} />
                 </div>
                 <button onClick={(event) => onAdicionarUsuario(event)}>Adicionar</button>
             </form>
             <ul>
-                { lista.map(usuario => {
+                {lista.map(usuario => {
                     return (
-                        <li>{ usuario.nome } - { usuario.email } - { usuario.telefone }</li>
+                        <li>{usuario.nome} - {usuario.email} - {usuario.telefone}</li>
                     );
-                }) }
+                })}
             </ul>
-            { lista.length > 10 ? 'Ganhou' : null }
+            {lista.length > 10 ? 'Ganhou' : null}
         </>
     );
 }

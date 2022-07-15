@@ -1,9 +1,9 @@
 import { Action } from "./actions";
 
-const initialState: string = 'light' 
+const initialState: string = 'light'
 
-export default function reducer(state:string = initialState, action:Action) {
-    
+export default function reducer(state: string = initialState, action: Action) {
+
     switch (action.type) {
         case 'change':
             return action.payload

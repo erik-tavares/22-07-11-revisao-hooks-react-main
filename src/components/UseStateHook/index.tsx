@@ -12,12 +12,12 @@ export default function UseStateHook() {
     return (
         <>
             <h2>useState</h2>
-            { valor } - { valor2 }
+            {valor} - {valor2}
             <button onClick={onMudarValor}>Alterar nome</button>
             <div>
-                <input type="text" 
-                       value={nome} 
-                       onChange={ (event) => setNome(event.target.value) }/>
+                <input type="text"
+                    value={nome}
+                    onChange={(event) => setNome(event.target.value)} />
             </div>
         </>
     );

@@ -8,15 +8,15 @@ import store from './store/store';
 import { State } from './store';
 
 export default function App() {
-    const theme = useSelector((state:State)=>state.theme)
-    
-    
+    const theme = useSelector((state: State) => state.theme)
+
+
     return (
-        
-            <ThemeProvider theme={theme === 'light' ? themeDefault : themeDark}>
-                <GlobalStyles fontFamily='Arial' />
-                <Routers/>
-            </ThemeProvider>
-    
+
+        <ThemeProvider theme={theme === 'light' ? themeDefault : themeDark}>
+            <GlobalStyles fontFamily='Arial' />
+            <Routers />
+        </ThemeProvider>
+
     );
 };

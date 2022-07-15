@@ -5,4 +5,4 @@ interface IChange {
     payload: string
 }
 
-export type Action =  IChange
+export type Action = IChange

@@ -8,11 +8,11 @@ type GlobalProps = {
 
 const GlobalStyles = createGlobalStyle<GlobalProps> `
     * {
-        font-family: ${ ({fontFamily}: GlobalProps) => fontFamily }
+        font-family: ${({ fontFamily }: GlobalProps) => fontFamily}
     }
 
     body {
-        background: ${ ({theme}: GlobalProps) => theme?.bg };
+        background: ${({ theme }: GlobalProps) => theme?.bg};
         margin: 0px;
         padding: 0px;
     }

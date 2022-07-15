@@ -13,22 +13,22 @@ type MoviesProps = {
 
 export default function Cinema({ movies, children }: CinemaProps) {
     return (
-        <>  
+        <>
             <h2>Cinema</h2>
             {
                 movies.map((movie, index) => {
                     return (
                         <div key={index}>
-                            <Title>{ movie.title }</Title>
+                            <Title>{movie.title}</Title>
                             <Year>
-                                { movie.year }
+                                {movie.year}
                             </Year>
                         </div>
                     );
                 })
             }
-            
-            { children }
+
+            {children}
         </>
     );
 }

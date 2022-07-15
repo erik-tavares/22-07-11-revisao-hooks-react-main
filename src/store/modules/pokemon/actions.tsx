@@ -5,4 +5,4 @@ interface IGetPokemon {
     payload: string | number
 }
 
-export type Action =  IGetPokemon
+export type Action = IGetPokemon

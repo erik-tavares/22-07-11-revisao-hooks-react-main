@@ -1,18 +1,19 @@
-import { Dispatch } from "react";
-import { Action } from "./action";
-import getPokemonApi from "../../../services/api";
+import { Dispatch } from "redux"
+import { Action } from "./actions"
+import getPokemonApi from '../../../services/api'
 
-export const getPokemon = (valor: string | number) => {
-    return (dispath: Dispatch<Action>) => {
+export const getPokemon = (valor: string | number)=>{
+    return (dispatch:Dispatch<Action>)=>{
+        
+        getPokemonApi(valor).then((response:any)=>{
 
-        getPokemonApi(valor).then((response: any) => {
-
-            dispath({
-                type: 'getPokemon',
+            dispatch({
+                type: "getPokemon",
                 payload: response
             })
+            
         })
-
-
+        
+        
     }
 }
